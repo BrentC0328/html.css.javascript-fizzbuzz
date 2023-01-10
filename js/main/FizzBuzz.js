@@ -26,7 +26,25 @@ class FizzBuzz {
 }
   
     getOutput(num) {
-        return num;
-    }
+        let num1 = num;
+        let result = "FizzBuzz";
+
+        for (let i = 1; i <= num1; i++){
+            if(this.isFizzBuzz(i)){
+                result = result + " FizzBuzz";
+            }
+            else if(this.isFizz(i)){
+                result = result + " Fizz";
+            }
+            else if(this.isBuzz(i)){
+                result = result + " Buzz";
+            }
+            else{result = result + " " + i }
+            }
+
+
+            return result;
+        }
+    
   }
   
