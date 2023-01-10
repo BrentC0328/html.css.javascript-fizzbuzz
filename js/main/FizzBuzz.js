@@ -5,19 +5,28 @@ class FizzBuzz {
     }
   
     isFizz(num) {
-        return null;
+        if(num % 3 == 0){
+            return true;
+        }
+        return false;
     }
   
     isBuzz(num) {
-        return null;
+        if(num % 5 == 0){
+            return true;
+        }
+        return false;
     }
   
     isFizzBuzz(num) {
-        return null;
+        if(this.isFizz(num) && this.isBuzz(num)){
+                return true;
     }
+    return false;
+}
   
     getOutput(num) {
-        return null;
+        return num;
     }
   }
   
